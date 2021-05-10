@@ -55,4 +55,9 @@ Push the image to Dockerhub: docker push lanru2001/my_flask_app:0.1
 Step 5: Deploy App on Kubernetes
 Create namespace flaskapp: kubectl create namespace flaskapp
 To list all the namespaces in your cluster run: kubectl get namespace
-Create a manifest file named my_flask_app_deploy.yaml:
+Create a manifest file named flask_app_deploy.yaml
+To roll out the deployment in our flaskapp namespace run: kubectl apply -f flask_app_deploy.yaml -n flaskapp
+To check if this deployment is running: kubectl get deploy -n flaskapp
+Forward our local port to the pod’s container port: kubectl port-forward deployment/myflaskapp-deploy -n flaskapp 5000:5000
+Navigate to localhost:5000/home to see your Flask application.
+Create a Kubernetes service to create a stable network for the running pod using kubernetes service definition file.
