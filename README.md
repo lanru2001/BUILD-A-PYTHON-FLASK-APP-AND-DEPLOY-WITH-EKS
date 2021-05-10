@@ -61,3 +61,4 @@ To check if this deployment is running: kubectl get deploy -n flaskapp
 Forward our local port to the pod’s container port: kubectl port-forward deployment/myflaskapp-deploy -n flaskapp 5000:5000
 Navigate to localhost:5000/home to see your Flask application.
 Create a Kubernetes service to create a stable network for the running pod using kubernetes service definition file.
+Create the service run: kubectl apply -f flask_app_service.yaml -n flask
