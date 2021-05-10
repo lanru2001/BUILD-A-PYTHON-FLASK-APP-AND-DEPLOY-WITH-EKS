@@ -41,3 +41,7 @@ Create a route and function to serve our HTML file. To serve HTML files in flask
 
 Run the application on your local machine by running:
 Navigate to localhost:5000/home on your preferred browser to view your Flask application.
+
+Step 4: Build a Docker image
+A container is required to run our application on Kubernetes.
+To build our docker image we need to create a Dockerfile in our application directory.
