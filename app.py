@@ -5,9 +5,9 @@ app = Flask(__name__)
 # create a route /
 @app.route("/")     
 # define the function hello             
-def hello():
-   # return "hello world" when
-   return "Hello World!"
+def my_web():
+   # return "my_web" 
+   return "Welcome to Azeez Temitope Olanrewaju webpage!"
 
 @app.route("/home")
 def home():
