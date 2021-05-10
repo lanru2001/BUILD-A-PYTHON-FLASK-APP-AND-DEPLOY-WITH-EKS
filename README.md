@@ -24,3 +24,13 @@ pip freeze > requirements.txt
 
 Step 2: Build the Flask Application
 The first step in creating our flask application is to create a file and name it app.py. Then open the file with your preferred IDE or editor to start coding.
+
+To run the app on your local machine do:
+python app.py
+
+Step 3: Serve HTML/Template Files
+Flask allows us to display contents to our users with HTML.
+
+Flask reads HTML files from a directory called templates and reads assets like your CSS, Javascript and images from the static directory.
+Create templates and static directories inside our my_flask_app directory:
+mkdir templates static
