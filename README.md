@@ -44,4 +44,15 @@ Navigate to localhost:5000/home on your preferred browser to view your Flask app
 
 Step 4: Build a Docker image
 A container is required to run our application on Kubernetes.
+
 To build our docker image we need to create a Dockerfile in our application directory.
+
+Build our docker image by running: docker build -t lanru2001/my_flask_app .
+Add a tag to the image: docker tag my_flask_app:latest lanru2001/my_flask_app:0.1
+Run the docker image: docker run -p 5000:5000 --name flask-container  lanru2001/my_flask_app:0.1
+Push the image to Dockerhub: docker push lanru2001/my_flask_app:0.1
+
+Step 5: Deploy App on Kubernetes
+Create namespace flaskapp: kubectl create namespace flaskapp
+To list all the namespaces in your cluster run: kubectl get namespace
+Create a manifest file named my_flask_app_deploy.yaml:
