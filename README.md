@@ -14,9 +14,12 @@ Install the Flask package: pip install Flask
 
 Save all the packages in a file: pip freeze > requirements.txt
 
+
+
 Step 2: Build the Flask Application The first step in creating our flask application is to create a file and name it app.py. Then open the file with your preferred IDE or editor to start coding.
 
 To run the app on your local machine do: python app.py
+
 
 Step 3: Serve HTML/Template Files Flask allows us to display contents to our users with HTML.
 
@@ -28,11 +31,13 @@ Create a route and function to serve our HTML file. To serve HTML files in flask
 
 Run the application on your local machine by running: Navigate to localhost:5000/home on your preferred browser to view your Flask application.
 
+
 Step 4: Build a Docker image A container is required to run our application on Kubernetes.
 
 To build our docker image we need to create a Dockerfile in our application directory.
 
 Build our docker image by running: docker build -t lanru2001/my_flask_app . Add a tag to the image: docker tag my_flask_app:latest lanru2001/my_flask_app:0.1 Run the docker image: docker run -p 5000:5000 --name flask-container lanru2001/my_flask_app:0.1 Push the image to Dockerhub: docker push lanru2001/my_flask_app:0.1
+
 
 Step 5: Deploy App on Kubernetes
 
