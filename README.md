@@ -34,3 +34,6 @@ Flask allows us to display contents to our users with HTML.
 Flask reads HTML files from a directory called templates and reads assets like your CSS, Javascript and images from the static directory.
 Create templates and static directories inside our my_flask_app directory:
 mkdir templates static
+Create a new file in the templates directory and name it home.html.
+
+create a route and function to serve our HTML file. To serve HTML files in flask, we will import and use a Flask function called render_template.
