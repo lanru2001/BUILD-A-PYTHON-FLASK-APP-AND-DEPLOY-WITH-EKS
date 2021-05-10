@@ -1,15 +1,17 @@
 # import flask
-from flask import Flask
+from flask import Flask, render_template
 # create an app instance
 app = Flask(__name__)
-
-
 # create a route /
 @app.route("/")     
-# define the function my_web            
-def my_web():
-   # return "my_web" when
-   return "Welcome to Azeez Temitope Olanrewaju webpage. I'm a DevOps Engineer with three years experience in automating CI/CD pipeline!"
+# define the function hello             
+def hello():
+   # return "hello world" when
+   return "Hello World!"
+
+@app.route("/home")
+def home():
+   return render_template("home.html")
 
 # on running python app.py
 if __name__ == "__main__":
