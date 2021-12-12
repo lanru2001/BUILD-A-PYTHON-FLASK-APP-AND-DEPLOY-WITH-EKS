@@ -1,5 +1,4 @@
 # Specify your base image
-
 FROM python:3-alpine
 RUN mkdir /my_flask_app
 WORKDIR /my_flask_app
