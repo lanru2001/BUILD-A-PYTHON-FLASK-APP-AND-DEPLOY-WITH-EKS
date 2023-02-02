@@ -2,11 +2,13 @@
 
 To create a Flask application we need to install the Flask package for python. But before we do that it is advisable to always create a virtual environment so that everything we will do doesn’t affect the Python installed on our machine.
 
-## Step 1: Installations Create the application directory: mkdir my_flask_app cd my_flask_app
+## Step 1: Installations Create the application directory: 
 
-Install python virtual environment with pip: pip install virtualenv
+- mkdir my_flask_app cd my_flask_app
 
-Create a virtual environment for our app: virtualenv venv
+- Install python virtual environment with pip: pip install virtualenv
+
+## Create a virtual environment for our app: virtualenv venv
 
 Activate the virtual environment we created: source venv/bin/activate
 
