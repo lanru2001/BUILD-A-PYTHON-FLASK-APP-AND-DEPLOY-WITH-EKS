@@ -1,4 +1,4 @@
-## Creating a basic Flask Application
+## Creating a Flask Application
 
 To create a Flask application we need to install the Flask package for python. But before we do that it is advisable to always create a virtual environment so that everything we will do doesn’t affect the Python installed on our machine.
 
